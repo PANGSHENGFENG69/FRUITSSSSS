@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Lato:ital@1&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        #Fruit1 {
+            text-align: center;
+            font-family: 'Hurricane', cursive;
+            font-family: 'Lato', sans-serif;
+        }
+        
+        #cir {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            background-color: aqua;
+            height: 50rem;
+        }
+        
+        #circle1 {
+            width: 200px;
+            height: 200px;
+            background-image: url(../JS/picture/banana.jfif);
+            border-radius: 100px;
+        }
+        
+        #circle2 {
+            width: 200px;
+            height: 200px;
+            background-image: url(../JS/picture/blackberry.jfif);
+            border-radius: 100px;
+        }
+        
+        #circle3 {
+            width: 200px;
+            height: 200px;
+            background-image: url(../JS/picture/apple.jfif);
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body style="background-color:darksalmon;">
+
+    <p id="Fruit1">If you dont like the fruits,just press the image and dissapear forever!!!!</p>
+
+    <div id="cir">
+        <div id="circle1"></div>
+        <div id="circle2"></div>
+        <div id="circle3"></div>
+
+    </div>
+
+    <script>
+        document.getElementById("circle1").onclick = function() {
+            document.getElementById("circle1").style.display = "none";
+        }
+        document.getElementById("circle2").onclick = function() {
+            document.getElementById("circle2").style.display = "none";
+        }
+        document.getElementById("circle3").onclick = function() {
+            document.getElementById("circle3").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
